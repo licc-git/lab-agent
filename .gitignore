@@ -1,0 +1,26 @@
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Backend Python environments and bytecode
+backend/.venv/
+__pycache__/
+
+# Runtime logs and generated vector database
+backend/logs/*
+!backend/logs/.gitkeep
+backend/data/chorma/
+
+# Editor and operating system files
+.vscode/
+.idea/
+avatars/
