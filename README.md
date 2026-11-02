@@ -100,7 +100,32 @@ npm run dev
 
 开发服务器会将 `/api` 和 `/uploads` 请求代理到 `http://127.0.0.1:8088`。如需为前端设置 API 基础地址，可在 `frontend/.env.development` 中配置 `VITE_API_BASE_URL`；使用本地开发代理时保持该值为空即可。
 
-## 6. 常用命令
+## 6. 页面预览
+
+以下截图按登录角色分类，均为成功登录后的页面。可点击页面名称查看截图，完整清单见[截图索引](./docs/screenshots/README.md)。
+
+### 管理员
+
+[系统首页](./docs/screenshots/admin/01-dashboard.png) ·
+[AI 助手](./docs/screenshots/admin/02-ai-assistant.png) ·
+[实验室管理](./docs/screenshots/admin/03-lab-management.png) ·
+[设备管理](./docs/screenshots/admin/04-equipment-management.png) ·
+[预约审核](./docs/screenshots/admin/05-reservation-review.png) ·
+[用户管理](./docs/screenshots/admin/06-user-management.png) ·
+[个人中心](./docs/screenshots/admin/07-profile.png) ·
+[密码管理](./docs/screenshots/admin/08-password.png)
+
+### 学生
+
+[系统首页](./docs/screenshots/student/01-dashboard.png) ·
+[AI 助手](./docs/screenshots/student/02-ai-assistant.png) ·
+[实验室列表](./docs/screenshots/student/03-lab-list.png) ·
+[实验室详情与设备清单](./docs/screenshots/student/04-lab-equipment-detail.png) ·
+[我的预约](./docs/screenshots/student/05-my-reservations.png) ·
+[个人中心](./docs/screenshots/student/06-profile.png) ·
+[密码管理](./docs/screenshots/student/07-password.png)
+
+## 7. 常用命令
 
 在 `frontend/` 目录下：
 
@@ -109,7 +134,7 @@ npm run build       # 构建生产版本，输出到 dist/
 npm run preview     # 本地预览生产构建
 ```
 
-## 7. 使用提示
+## 8. 使用提示
 
 - 前端和后端都需要运行；前端请求失败时，先确认后端已在 8088 端口启动。
 - AI 问答需要有效的 DeepSeek API Key。首次使用知识检索时，Sentence Transformers 可能需要下载模型，请确保网络可用并预留磁盘空间。
